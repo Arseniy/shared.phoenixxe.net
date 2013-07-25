@@ -1,0 +1,20 @@
+/**
+* Interface <b>Task</b> contains the necessary <br>
+* methods for loading in instances of <b>TaskQueue</b> objects. <br>
+* <br>
+* To work the Task instance should be in "available" state, specifically <br>
+* method <b>isAvailable()</b> should return <b>true</b>(Previously <br>
+* isAvailable() must be correctly implemented). <br>
+* <br>
+* To perform any action method <b>execute()</b> is called. Depending on the implementation,<br>
+* it runs custom code, the successful execution of which should be completed by calling <br>
+* <b>completed()</b>, not successful - <b>fail()</b>. The logical result of execute() can be
+* checked by <b> isCompleted</b> and <b> isFailed </b>, respectively.
+* <br> 
+* Other parameters can be set via implements of:<br>
+*  {@link Task#setDelay(long)}<br>
+*  {@link Task#dropState()}<br>
+*  {@link Task#dropTimeStamp()}<br> 
+* @see   net.recman.shared.tasks.TaskQueue
+* @see   net.recman.shared.tasks.SimleTask
+*/

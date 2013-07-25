@@ -1,0 +1,16 @@
+/**
+* Abstract class <b>SimpleTask</b> implement <b>Task</b> and override all its methods.
+* <br>
+* It is used for guaranteed execution of custom code and supports:<br>
+* - multiple execution attempts if there was no critical errors during execution;
+* - execution delay;
+* - execution until one of completed() or fail() called.
+* <br>
+* Method <b>execute()</b> in SimpleTask makes some checks of inner parameters such as <br>
+* available, execute delay etc and call <b>perform()</b> (perform() should be implemented<br>
+* by the child objects). SimpleTask execute() method don't call completed() or fail() after<br>
+* execution but perform() do. So implementation of perform() must organize it.<br>
+* <br>
+* @see net.recman.shared.tasks.Task
+* @see #perform()
+*/

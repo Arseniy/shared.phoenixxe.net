@@ -1,0 +1,11 @@
+/**
+* The class is a queue for execution, loaded into it, tasks (All task<br>
+* should extends <b>SimpleTask</b> and overrides <b>SimpleTask.perform()</b>).<br>
+* The main purpose of this class is to store tasks, organize its execution and<br>
+* remove used tasks.<br> 
+* The task must be loading in by the <b>put()</b> method before it can processed <br>
+* in queue. TaskQueue class extends <b>Tread</b> so method <b>run()</b> should <br>
+* be called to run the all process(method put() can be used before or after this call).<br>
+* Unnecessary tasks can be manually removed from queue by calling <b>protected remove()</b>.<br>
+* @see net.recman.shared.tasks.SimplyTask
+*/
